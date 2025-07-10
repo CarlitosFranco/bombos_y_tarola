@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bombos y Tarola</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="multimedia/img/favicon.ico">
+
+</head>
+<body>
+    <script src="js/app.js"></script>
+    <audio id="musicafondo" loop>
+        <source src="multimedia/audio/fondo.mp3" type="audio/mp3">
+    </audio>
+    <button onclick="activarmusica()">🎵 Musiquita de fondo </button>
+
+        <header>
+        <h1 style="color: rgb(255, 255, 255); font-family:'Courier New', Courier, monospace " >🎶BOMBOS Y TAROLA🎶
+        <img src="multimedia/img/logo bombos y tarola.png" width="80">
+    </header>
+
+    <main>
+        <section>
+            <button class="iralcarrito" onclick="iralcarrito()" >Carrito de Compra</button>
+            <h2>Artista mas Vendido</h2>
+            <div controls style="text-align: center;">
+                <img src="multimedia/img/SOAD.webp" alt="atista mas vendido" width="500">
+            </div>
+            <h3>Contactanos 😊</h3>
+            <form action="#" method="post">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" >
+                <label for="apellido">Apellidos</label>
+                <input type="text" id="apellido" name="apellido" ><br><br>
+
+                <label for="correo">Correo</label>
+                <input type="email" id="correo" name="correo" placeholder="correo@dominio.com">
+                <label for="telefono">Telefono</label>
+                <input type="number" id="telefono" name="tefefono" maxlength="9" ><br><br>
+
+                <label for="categoria">Categorias</label>
+                <select id="categoria" name="categoria">
+                <option value="Rap">Rap</option>
+                <option value="Salsa">Salsa</option>
+                <option value="Rock">Rock</option>
+                <option value="Pop">Pop</option>
+            <br><br>                    
+
+            <input type="submit" value="Enviar Datos">
+            </form>
+            
+            <button onclick="saludo()">Saludo</button>
+            <br>
+            <button onclick="compra()">Compra</button>
+        </section> 
+
+        <h1 class="Vinilos">Venta de Vinilos 📀💿📀💿📀💿</h1>
+
+        <section>
+            <div controls style="text-align: center;">
+                <h3>Artista Recomendado</h3>
+                <video width="620" height="240" controls>
+                <source src="multimedia/video/Canserbero - Jeremías 17_5 (Video Oficial).mp4" type="video/mp4">
+                </video>
+            </div>
+                <br>
+            <div>
+                <h3>Playlist</h3>
+                <p>Track 1</p>
+                <audio controls>
+                    <source src="multimedia/audio/Canserbero  El Mundo Abc [Apa y Can].mp3" type="audio/mp3">    
+                </audio>
+
+                <p>Track 2</p>
+                <audio controls>
+                    <source src="multimedia/audio/Canserbero - Mundo De Piedra (Video Oficial).mp3" type="audio/mp3">    
+                </audio>
+
+                <p>Track 3</p>
+                <audio controls>
+                    <source src="multimedia/audio/Canserbero - Querer Querernos (Versión Acústica).mp3" type="audio/mp3">    
+                </audio>
+            </div>
+        </section>
+
+        <section>
+            <h3>Vinilos en venta</h3>
+            <div controls style="text-align: center;">
+                <img src="multimedia/img/vinilo.jpg" alt="vinilo1" width="300" height="200">
+                <img src="multimedia/img/vinilo 2.jpg" alt="vinilo2" width="300" height="200">
+                <img src="multimedia/img/vinilo 3.jpeg" alt="vinilo3" width="300" height="200">
+            </div>
+            <div controls style="text-align: center;">
+                <img src="multimedia/img/vinilo 4.jpeg" alt="vinilo4" width="300" height="200">
+                <img src="multimedia/img/vinilo 5.jpeg" alt="vinilo5" width="300" height="200">
+                <img src="multimedia/img/vinilo 6.jpg" alt="vinilo6" width="300" height="200">
+            </div>
+        </section>
+
+    <footer>
+        <p style="color:gray;">© Derechos de Autor</p>
+    </footer>
+    </main>
+</body>
+</html>
