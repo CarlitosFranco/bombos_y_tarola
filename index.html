@@ -9,22 +9,29 @@
 </head>
 <body>
 
-    <!-- Botón y música de fondo -->
-    <audio id="musicafondo" loop>
+       <audio id="musicafondo" loop>
         <source src="multimedia/audio/fondo.mp3" type="audio/mp3">
     </audio>
     <button onclick="activarmusica()">🎵 Sumergete</button>
 
-    <!-- Encabezado -->
-    <header>
-        <h1 style="color: rgb(255, 255, 255); font-family:'Courier New', Courier, monospace">
-            🎶BOMBOS Y TAROLA🎶
-            <img src="multimedia/img/logo bombos y tarola.png" width="80" alt="Logo Bombos y Tarola">
-        </h1>
+        <header>
+        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
+            <h1 style="color: rgb(255, 255, 255); font-family:'Courier New', Courier, monospace">
+                🎶BOMBOS Y TAROLA🎶
+                <img src="multimedia/img/logo bombos y tarola.png" width="80" alt="Logo Bombos y Tarola">
+            </h1>
+
+            <form class="busqueda-form">
+                <label for="artista">Artista:</label>
+                <input type="text" id="artista" name="artista" class="lupita">
+
+                <label for="album">Álbum:</label>
+                <input type="text" id="album" name="album" class="lupita">
+            </form>
+        </div>
     </header>
 
-    <!-- Contenido principal -->
-    <main>
+       <main>
         <section>
             <button class="iralcarrito" onclick="iralcarrito()">Carrito de Compra</button>
             <h2>Artista más Vendido</h2>
@@ -109,13 +116,28 @@
         </section>
     </main>
 
-    <!-- Pie de página -->
     <footer>
         <p style="color: gray;">© Derechos de Autor</p>
-    </footer>
+        
+        <div class="siguenos">
+        <p>Síguenos en nuestras redes:</p>
 
-    <!-- Script al final -->
+        <div class="iconos">
+            <a href="https://wa.me/51912345678" target="_blank" title="WhatsApp">
+                <img src="multimedia/img/whatsapp.png" alt="WhatsApp" width="30">
+            </a>
+            <a href="https://facebook.com/tupagina" target="_blank" title="Facebook">
+                <img src="multimedia/img/facebook.png" alt="Facebook" width="30">
+            </a>
+            <a href="https://instagram.com/tupagina" target="_blank" title="Instagram">
+                <img src="multimedia/img/instagram (1).png" alt="Instagram" width="30">
+            </a>
+        </div>
+        </div>
+
+        <p>&copy; 2025 Bombos y Tarola</p>
+    </footer>
+   
     <script src="js/app.js"></script>
 </body>
 </html>
-
