@@ -1,143 +1,16 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+=======
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="src/img/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bombos y Tarola</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" type="image/x-icon" href="multimedia/img/favicon.ico">
-</head>
-<body>
-
-       <audio id="musicafondo" loop>
-        <source src="multimedia/audio/fondo.mp3" type="audio/mp3">
-    </audio>
-    <button onclick="activarmusica()">🎵 Sumergete</button>
-
-        <header>
-        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
-            <h1 style="color: rgb(255, 255, 255); font-family:'Courier New', Courier, monospace">
-                🎶BOMBOS Y TAROLA🎶
-                <img src="multimedia/img/logo bombos y tarola.png" width="80" alt="Logo Bombos y Tarola">
-            </h1>
-
-            <form class="busqueda-form">
-                <label for="artista">Artista:</label>
-                <input type="text" id="artista" name="artista" class="lupita">
-
-                <label for="album">Álbum:</label>
-                <input type="text" id="album" name="album" class="lupita">
-            </form>
-        </div>
-    </header>
-
-       <main>
-        <section>
-            <button class="iralcarrito" onclick="iralcarrito()">Carrito de Compra</button>
-            <h2>Artista más Vendido</h2>
-            <div style="text-align: center;">
-                <img src="multimedia/img/SOAD.webp" alt="Artista más vendido: SOAD" width="500">
-            </div>
-
-            <h3>Contáctanos 😊</h3>
-            <form action="#" method="post">
-                <label for="nombre">Nombre</label>
-                <input type="text" id="nombre" name="nombre" required>
-
-                <label for="apellido">Apellidos</label>
-                <input type="text" id="apellido" name="apellido" required><br><br>
-
-                <label for="correo">Correo</label>
-                <input type="email" id="correo" name="correo" placeholder="correo@dominio.com" required>
-
-                <label for="telefono">Teléfono</label>
-                <input type="tel" id="telefono" name="telefono" pattern="[0-9]{9}" maxlength="9" placeholder="123456789" required><br><br>
-
-                <label for="categoria">Categorías</label>
-                <select id="categoria" name="categoria" required>
-                    <option value="">Seleccione</option>
-                    <option value="Rap">Rap</option>
-                    <option value="Salsa">Salsa</option>
-                    <option value="Rock">Rock</option>
-                    <option value="Pop">Pop</option>
-                </select><br><br>
-
-                <input type="submit" value="Enviar Datos">
-            </form>
-
-            <button onclick="saludo()">Saludo</button>
-            <br>
-            <button onclick="compra()">Compra</button>
-        </section>
-
-        <h1 class="Vinilos">Venta de Vinilos 📀💿📀💿📀💿</h1>
-
-        <section>
-            <div style="text-align: center;">
-                <h3>Artista Recomendado</h3>
-                <video width="620" height="240" controls>
-                    <source src="multimedia/video/Canserbero - Jeremías 17_5 (Video Oficial).mp4" type="video/mp4">
-                </video>
-            </div>
-
-            <br>
-
-            <div>
-                <h3>Playlist</h3>
-                <p>Track 1</p>
-                <audio controls>
-                    <source src="multimedia/audio/Canserbero  El Mundo Abc [Apa y Can].mp3" type="audio/mp3">
-                </audio>
-
-                <p>Track 2</p>
-                <audio controls>
-                    <source src="multimedia/audio/Canserbero - Mundo De Piedra (Video Oficial).mp3" type="audio/mp3">
-                </audio>
-
-                <p>Track 3</p>
-                <audio controls>
-                    <source src="multimedia/audio/Canserbero - Querer Querernos (Versión Acústica).mp3" type="audio/mp3">
-                </audio>
-            </div>
-        </section>
-
-        <section>
-            <h3>Vinilos en venta</h3>
-            <div style="text-align: center;">
-                <img src="multimedia/img/vinilo.jpg" alt="Vinilo 1" width="300" height="200">
-                <img src="multimedia/img/vinilo 2.jpg" alt="Vinilo 2" width="300" height="200">
-                <img src="multimedia/img/vinilo 3.jpeg" alt="Vinilo 3" width="300" height="200">
-            </div>
-            <div style="text-align: center;">
-                <img src="multimedia/img/vinilo 4.jpeg" alt="Vinilo 4" width="300" height="200">
-                <img src="multimedia/img/vinilo 5.jpeg" alt="Vinilo 5" width="300" height="200">
-                <img src="multimedia/img/vinilo 6.jpg" alt="Vinilo 6" width="300" height="200">
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <p style="color: gray;">© Derechos de Autor</p>
-        
-        <div class="siguenos">
-        <p>Síguenos en nuestras redes:</p>
-
-        <div class="iconos">
-            <a href="https://wa.me/51912345678" target="_blank" title="WhatsApp">
-                <img src="multimedia/img/whatsapp.png" alt="WhatsApp" width="30">
-            </a>
-            <a href="https://facebook.com/tupagina" target="_blank" title="Facebook">
-                <img src="multimedia/img/facebook.png" alt="Facebook" width="30">
-            </a>
-            <a href="https://instagram.com/tupagina" target="_blank" title="Instagram">
-                <img src="multimedia/img/instagram (1).png" alt="Instagram" width="30">
-            </a>
-        </div>
-        </div>
-
-        <p>&copy; 2025 Bombos y Tarola</p>
-    </footer>
-   
-    <script src="js/app.js"></script>
-</body>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+>>>>>>> d030a2b (Mi primer commit)
 </html>
