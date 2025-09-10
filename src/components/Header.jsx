@@ -1,8 +1,11 @@
-import React, { useState } from 'react';
-import logo from '../img/logo.png';
-import Sidebar from './Sidebar';
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import logo from "../img/logo.png";
+import Sidebar from "./Sidebar";
+import { ShoppingCartIcon } from "@heroicons/react/24/solid";
 
-const Header = () => {
+
+const Header = ({ cartCount }) => {
   const [isSidebarActive, setIsSidebarActive] = useState(false);
 
   const handleToggleMenu = () => {
@@ -18,11 +21,7 @@ const Header = () => {
         </div>
 
         {/* Barra de búsqueda */}
-        <input 
-          type="text" 
-          className="lupita" 
-          placeholder="Buscar vinilos..." 
-        />
+        <input type="text" className="lupita" placeholder="Buscar vinilos..." />
 
         <div>
           <h2>"Donde gira la pasión por la música"</h2>
@@ -30,17 +29,37 @@ const Header = () => {
 
         <nav className="main-nav">
           <ul>
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#catalogo">Catálogo</a></li>
-            <li><a href="#noticias">Noticias</a></li>
-            <li><a href="#nosotros">Sobre Nosotros</a></li>
-            <li><a href="#contacto">Contacto</a></li>
+            <li>
+              <Link to="/">Inicio</Link>
+            </li>
+            <li>
+              <Link to="/catalogo">Catálogo</Link>
+            </li>
+            <li>
+              <a href="#noticias">Noticias</a>
+            </li>
+            <li>
+              <a href="/SobreNosotros">Sobre Nosotros</a>
+            </li>
+            <li>
+              <a href="#contacto">Contacto</a>
+            </li>
+            <li>
+              <Link to="/carrito" className="relative flex items-center">
+                <ShoppingCartIcon className="h-7 w-7 text-gray-700" />
+                {cartCount > 0 && (
+                  <span className="absolute -top-2 -right-2 bg-red-600 text-white text-xs px-2 py-0.5 rounded-full">
+                    {cartCount}
+                  </span>
+                )}
+              </Link>
+            </li>
           </ul>
         </nav>
 
-        <button 
-          className="menu-toggle" 
-          aria-label="Abrir menú" 
+        <button
+          className="menu-toggle"
+          aria-label="Abrir menú"
           onClick={handleToggleMenu}
         >
           ☰
@@ -54,4 +73,3 @@ const Header = () => {
 };
 
 export default Header;
-
