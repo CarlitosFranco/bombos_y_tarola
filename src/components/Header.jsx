@@ -36,13 +36,13 @@ const Header = ({ cartCount }) => {
               <Link to="/catalogo">Catálogo</Link>
             </li>
             <li>
-              <a href="#noticias">Noticias</a>
+              <Link to="/noticias">Noticias</Link>
             </li>
             <li>
-              <a href="/SobreNosotros">Sobre Nosotros</a>
+              <Link to="/sobre-nosotros">Sobre Nosotros</Link>
             </li>
             <li>
-              <a href="#contacto">Contacto</a>
+              <Link to="/contacto">Contacto</Link>
             </li>
             <li>
               <Link to="/carrito" className="relative flex items-center">
@@ -73,3 +73,4 @@ const Header = ({ cartCount }) => {
 };
 
 export default Header;
+

@@ -575,6 +575,7 @@ footer .copyright {
   font-weight: 700;
   font-style: normal;
   font-display: swap;
+
 }
 
 .seccion-vinilos {
@@ -677,4 +678,5 @@ footer .copyright {
 
 .tarjeta-boton:hover {
   background-color: #e67300;
+
 }
