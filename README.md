@@ -1,28 +1,74 @@
-# React + Vite
+# 🎶 Bombos y Tarola
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Tienda online de vinilos desarrollada con **React**.  
+Permite navegar por un catálogo dinámico, agregar productos al carrito, suscribirse al newsletter, enviar mensajes de contacto y descargar el Libro de Reclamaciones en PDF.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🏫 Proyecto académico
+Este proyecto fue desarrollado como parte de la carrera técnica en **Programación** del  
+**Instituto San Agustín ISAT – 2025**.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ✨ Características principales
+- Catálogo de vinilos con sistema de carrito en tiempo real.
+- Páginas: Inicio, Catálogo, Sobre Nosotros, Noticias y Contacto.
+- Formulario de contacto funcional con Formspree.
+- Newsletter para suscripciones.
+- Descarga directa del **Libro de Reclamaciones** en PDF.
+
+---
+
+## 🌐 Demo en vivo
+[🔗 Ver sitio desplegado](https://bombos-y-tarola.vercel.app/)  
+
+---
+
+## 🖼️ Vista previa
+![Vista previa](public/preview.png)  
+
+---
+
+## ⚙️ Instalación y ejecución local
+1. Clona el repositorio:
+
+   ```bash
+   git clone https://github.com/CarlitosFranco/bombos_y_tarola.git
+
+Entra a la carpeta del proyecto:
+cd bombos_y_tarola
+
+Instala las dependencias:
+npm install
+
+Ejecuta el entorno de desarrollo:
+npm run dev
+Abre en tu navegador: http://localhost:5173
+
+🛠️ Tecnologías utilizadas
+React + Vite (Frontend)
+
+CSS puro (estilos)
+
+Formspree (manejo de formularios)
+
+GitHub Pages/Vercel (despliegue)
+
+📂 Estructura del proyecto
+bash
+Copiar código
+src/
+ ├─ components/      # Componentes de React
+ ├─ style/           # Archivos CSS
+ ├─ img/             # Imágenes
+ └─ App.jsx          # Componente principal
 
 
-=======
-# React + Vite
+👤 Autor
+Carlos Franco
+GitHub
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
->>>>>>> d030a2b (Mi primer commit)
+📝 Licencia
+Este proyecto se distribuye bajo la licencia MIT.
+Eres libre de usar, modificar y distribuir este código bajo los términos de dicha licencia.
