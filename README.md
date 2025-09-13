@@ -2,16 +2,19 @@
 
 Tienda online de vinilos desarrollada con **React**.  
 Permite navegar por un catálogo dinámico, agregar productos al carrito, suscribirse al newsletter, enviar mensajes de contacto y descargar el Libro de Reclamaciones en PDF.
+![logo](src/img/logo.png) 
 
 ---
 
 ## 🏫 Proyecto académico
+
 Este proyecto fue desarrollado como parte de la carrera técnica en **Programación** del  
 **Instituto San Agustín ISAT – 2025**.
 
 ---
 
 ## ✨ Características principales
+
 - Catálogo de vinilos con sistema de carrito en tiempo real.
 - Páginas: Inicio, Catálogo, Sobre Nosotros, Noticias y Contacto.
 - Formulario de contacto funcional con Formspree.
@@ -26,27 +29,32 @@ Este proyecto fue desarrollado como parte de la carrera técnica en **Programaci
 ---
 
 ## 🖼️ Vista previa
-![Vista previa](public/preview.png)  
+![Inicio](public/preview.png)
+![Catalogo](public/Catalogo.png.png)
+![Sobre Nosotros](public/SobreNosotros.png.png)
+![Contacto](public/Contacto.png.png)
 
 ---
 
 ## ⚙️ Instalación y ejecución local
+
 1. Clona el repositorio:
 
    ```bash
    git clone https://github.com/CarlitosFranco/bombos_y_tarola.git
 
 Entra a la carpeta del proyecto:
-cd bombos_y_tarola
+    cd bombos_y_tarola
 
 Instala las dependencias:
-npm install
+    npm install
 
 Ejecuta el entorno de desarrollo:
-npm run dev
-Abre en tu navegador: http://localhost:5173
+    npm run dev
+    Abre en tu navegador: http://localhost:5173
 
-🛠️ Tecnologías utilizadas
+## 🛠️ Tecnologías utilizadas
+
 React + Vite (Frontend)
 
 CSS puro (estilos)
@@ -55,9 +63,9 @@ Formspree (manejo de formularios)
 
 GitHub Pages/Vercel (despliegue)
 
-📂 Estructura del proyecto
-bash
-Copiar código
+## 📂 Estructura del proyecto
+
+
 src/
  ├─ components/      # Componentes de React
  ├─ style/           # Archivos CSS
@@ -65,10 +73,12 @@ src/
  └─ App.jsx          # Componente principal
 
 
-👤 Autor
+## 👤 Autor
+
 Carlos Franco
 GitHub
 
-📝 Licencia
+## 📝 Licencia
+
 Este proyecto se distribuye bajo la licencia MIT.
 Eres libre de usar, modificar y distribuir este código bajo los términos de dicha licencia.
