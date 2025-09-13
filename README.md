@@ -30,9 +30,9 @@ Este proyecto fue desarrollado como parte de la carrera técnica en **Programaci
 
 ## 🖼️ Vista previa
 ![Inicio](public/preview.png)
-![Catalogo](public/Catalogo.png.png)
-![Sobre Nosotros](public/SobreNosotros.png.png)
-![Contacto](public/Contacto.png.png)
+![Catalogo](public/Catalogo.png)
+![Sobre Nosotros](public/SobreNosotros.png)
+![Contacto](public/Contacto.png.)
 
 ---
 
