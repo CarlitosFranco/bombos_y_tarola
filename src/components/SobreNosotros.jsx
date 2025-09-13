@@ -1,29 +1,53 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import "../style/SobreNosotros.css";
 
 const SobreNosotros = () => {
   return (
-    <section className="bg-[#F5F5DC] py-16 px-6 text-gray-800">
-      <div className="max-w-screen-lg mx-auto">
-        <h2 className="text-5xl font-extrabold text-center mb-10 text-orange-600">
-          Sobre Nosotros
-        </h2>
+    <section className="sobre-nosotros">
+      <div className="container">
+        <h1 className="titulo-principal">
+          Sobre <span className="resaltado">Bombos y Tarola</span>
+        </h1>
 
-        <div className="space-y-6 text-lg leading-relaxed">
+        <div className="bloque">
+          <h2 className="subtitulo">Nuestra Historia</h2>
           <p>
-            En <span className="font-semibold text-orange-700">Bombos y Tarola</span>, giramos al ritmo de la pasión por la música. Somos una tienda dedicada a los vinilos, donde cada disco cuenta una historia y cada cliente forma parte de una comunidad que valora el sonido auténtico.
+            Nacimos de una pasión por el sonido cálido y auténtico del vinilo.
+            Bombos y Tarola comenzó como un pequeño puesto de vinilos en Lima,
+            y hoy somos una tienda online que busca compartir esa magia con
+            coleccionistas y melómanos de todo el mundo.
           </p>
+        </div>
 
-          <p>
-            Nuestra misión es ofrecer una experiencia única a los amantes del vinilo, con una selección curada de álbumes clásicos, joyas ocultas y lanzamientos contemporáneos. Creemos que la música no solo se escucha, se vive.
-          </p>
+        <div className="grid-mision-vision">
+          <div>
+            <h2 className="subtitulo">Nuestra Misión</h2>
+            <p>
+              Ofrecer una experiencia única a cada amante de la música,
+              brindando vinilos de alta calidad y fomentando la cultura del
+              coleccionismo con un servicio cercano y confiable.
+            </p>
+          </div>
+          <div>
+            <h2 className="subtitulo">Nuestra Visión</h2>
+            <p>
+              Ser la tienda de referencia en Perú y Latinoamérica para
+              coleccionistas de vinilos, inspirando a nuevas generaciones a
+              redescubrir el encanto del formato analógico.
+            </p>
+          </div>
+        </div>
 
+        <div className="contacto">
+          <h2 className="subtitulo">Contáctanos</h2>
           <p>
-            Este proyecto también es una aventura educativa y creativa que compartimos con <span className="font-semibold text-orange-700">Gabriel</span>, fomentando la curiosidad, la organización y el amor por el arte. Cada vinilo es una oportunidad para aprender, conectar y celebrar.
-          </p>
-
-          <p>
-            Gracias por formar parte de esta historia. ¡Que la música siga girando!
+            📍 Lima, Perú <br />
+            ✉️{" "}
+            <a href="mailto:contacto@bombosytarola.com">
+              contacto@bombosytarola.com
+            </a>
+            <br />
+            📞 +51 999 888 777
           </p>
         </div>
 

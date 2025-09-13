@@ -1,7 +1,5 @@
 import React, { useState } from "react";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import { ShoppingCartIcon } from "@heroicons/react/24/outline";
-
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Sidebar from "./components/Sidebar";
 import Banner from "./components/Banner";
@@ -13,6 +11,9 @@ import Footer from "./components/Footer";
 import SobreNosotros from "./components/SobreNosotros";
 import ProductList from "./components/ProductList";
 import Cart from "./components/Cart";
+import Formulario from "./components/Formulario";
+import Noticias from "./components/Noticias";
+import Contacto from "./components/Contacto";
 
 import "./style/style.css";
 
@@ -21,6 +22,7 @@ import "./style/style.css";
 const App = () => {
   const [cartItems, setCartItems] = useState([]);
 
+  // Agregar al carrito
   const handleAddToCart = (product) => {
     setCartItems((prevItems) => {
       const existingItem = prevItems.find((item) => item.id === product.id);
@@ -33,7 +35,7 @@ const App = () => {
               : item
           );
         } else {
-          return prevItems; // ya alcanzó el stock
+          return prevItems;
         }
       } else {
         return [...prevItems, { ...product, cantidad: 1 }];
@@ -41,6 +43,7 @@ const App = () => {
     });
   };
 
+  // Quitar del carrito
   const handleRemoveFromCart = (productId) => {
     setCartItems((prevItems) =>
       prevItems
@@ -62,6 +65,7 @@ const App = () => {
 
       <main>
         <Routes>
+          {/* Página principal */}
           <Route
             path="/"
             element={
@@ -69,13 +73,18 @@ const App = () => {
                 <Banner />
                 <Catalogo />
                 <Multimedia />
+                <Formulario /> {/* Newsletter en la home */}
               </>
             }
           />
+
+          {/* Catálogo con lista de productos */}
           <Route
             path="/catalogo"
             element={<ProductList onAddToCart={handleAddToCart} />}
           />
+
+          {/* Carrito de compras */}
           <Route
             path="/carrito"
             element={
@@ -86,6 +95,11 @@ const App = () => {
               />
             }
           />
+
+          {/* Páginas informativas */}
+          <Route path="/sobre-nosotros" element={<SobreNosotros />} />
+          <Route path="/noticias" element={<Noticias />} />
+          <Route path="/contacto" element={<Contacto />} />
         </Routes>
       </main>
 

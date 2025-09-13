@@ -7,9 +7,9 @@ const Sidebar = ({ isActive, onClose }) => {
       <ul>
         <li><a href="/" onClick={onClose}>Inicio</a></li>
         <li><a href="/Catalogo" onClick={onClose}>Catálogo</a></li>
-        <li><a href="#noticias" onClick={onClose}>Noticias</a></li>
-        <li><a href="/SobreNosotros" onClick={onClose}>Sobre Nosotros</a></li>
-        <li><a href="#contacto" onClick={onClose}>Contacto</a></li>
+        <li><a href="/Noticias" onClick={onClose}>Noticias</a></li>
+        <li><a href="/sobre-nosotros" onClick={onClose}>Sobre Nosotros</a></li>
+        <li><a href="Contacto" onClick={onClose}>Contacto</a></li>
       </ul>
     </aside>
   );

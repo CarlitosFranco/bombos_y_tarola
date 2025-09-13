@@ -1,0 +1,65 @@
+.sobre-nosotros {
+  background: #f9f9f9;
+  color: #333;
+  padding: 60px 20px;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+.sobre-nosotros .container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.titulo-principal {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+
+.resaltado {
+  color: #e63946; /* Rojo elegante */
+}
+
+.bloque {
+  margin-bottom: 40px;
+}
+
+.subtitulo {
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+  color: #222;
+  border-left: 4px solid #e63946;
+  padding-left: 8px;
+}
+
+.grid-mision-vision {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+@media (min-width: 768px) {
+  .grid-mision-vision {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.contacto {
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.contacto a {
+  color: #e63946;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contacto a:hover {
+  text-decoration: underline;
+}
