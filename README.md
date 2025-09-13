@@ -32,7 +32,7 @@ Este proyecto fue desarrollado como parte de la carrera técnica en **Programaci
 ![Inicio](public/preview.png)
 ![Catalogo](public/Catalogo.png)
 ![Sobre Nosotros](public/SobreNosotros.png)
-![Contacto](public/Contacto.png.)
+![Contacto](public/Contacto.png)
 
 ---
 
